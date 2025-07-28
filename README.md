@@ -33,7 +33,7 @@ We have a simple dataset of students with the following fields:
 ## 💻 Code Snippet
 
 
-# Pandas-Project-Student-Marks-Analysis
+
 
 ```python
 import pandas as pd
