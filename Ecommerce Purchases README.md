@@ -55,9 +55,9 @@ print('\nEmail with Credit Card 4664825258997302:\n', data[data['Credit Card'] =
 # Count cards expiring in 2020 (Method 1)
 ```python
 print('\nCredit Cards Expiring in 2020:\n', len(data[data['CC Exp Date'].str.endswith('20')]))
-```
+
 # Method 2: using loop
-```python
+
 def count_expired_in_2020():
     count = 0
     for i in data['CC Exp Date']:
@@ -66,9 +66,9 @@ def count_expired_in_2020():
     print('\n[Loop Method] Cards expiring in 2020:', count)
 
 count_expired_in_2020()
-```
+
 # Method 3: using slicing
-```python
+
 print('\n[Slicing Method] Cards expiring in 2020:', len(data[data['CC Exp Date'].apply(lambda x: x[3:] == '20')]))
 ```
 # AM or PM purchase count
